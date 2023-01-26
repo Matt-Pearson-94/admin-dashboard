@@ -156,3 +156,44 @@ input {
     font-weight: bolder;
     font-size: 1em;
 }
+
+.main-contents {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.articles {
+    grid-column: 1/-2;
+    grid-row: 1/-1;
+}
+
+.announcements {
+    grid-column: 2/-1;
+    grid-row: 1/-2;
+}
+
+.trending {
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin: 25px;
+    gap: 35px;
+}
+
+.article {
+    height: 250px;
+    background: linear-gradient(to left, #FFFFFF 98%, #eab308 0%);
+    border-radius: 3%;
+
+}
+
+.article:hover {
+    transition: 0.3s linear;
+    background: linear-gradient(to left, #FFFFFF 96%, #eab308 0%);
+    scale: 1.02;
+}
