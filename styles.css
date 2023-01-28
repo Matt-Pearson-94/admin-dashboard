@@ -13,6 +13,7 @@ html {
 }
 .sb-header > svg {
     fill: white;
+    width: 50px;
 }
 
 
@@ -40,7 +41,7 @@ html {
 .main-contents {
     grid-column: 2/-1;
     grid-row: 2/-1;
-    background-color: #115e5915 ;
+    background-color: #115e5934 ;
 }
 
 .sb {
@@ -64,7 +65,7 @@ html {
 
 .sb > svg {
     fill: white;
-    height: 40px;
+    height: 30px;
 }
 
 .header {
@@ -144,6 +145,7 @@ html {
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     margin-right: 50px;
+    gap: 25px;
 }
 
 input {
@@ -189,6 +191,8 @@ input {
     height: 250px;
     background: linear-gradient(to left, #FFFFFF 98%, #eab308 0%);
     border-radius: 3%;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -196,4 +200,69 @@ input {
     transition: 0.3s linear;
     background: linear-gradient(to left, #FFFFFF 96%, #eab308 0%);
     scale: 1.02;
+}
+
+.section-two > svg {
+    fill: rgb(50,50,50,0.9);
+    height: 30px;
+}
+
+.section-one {
+    height: 40%;
+    width: 100%;
+    padding: 35px 35px;
+}
+
+.a-header {
+    font-size: large;
+    font-weight: 900;
+}
+
+.a-para {
+    color: rgb(50,50,50,0.7);
+}
+
+.section-two {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+    margin-right: 35px;
+}
+
+.a-heading {
+    margin: 35px 0 -15px 35px;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.an-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 55px 10px;
+    border-radius: 3%;
+}
+
+.an-header {
+    font-size: medium;
+    font-weight: 900;
+}
+
+.an-container > div {
+    width: fit-content;
+    margin: 10px;
+    border-bottom: 1px solid rgb(50,50,50,0.4);
+    padding-bottom: 10px;
+    padding: 10px;
+}
+
+.an-title {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin: 35px 0 -45px 12px;
+}
+
+#an-column-three {
+    border: none;
 }
